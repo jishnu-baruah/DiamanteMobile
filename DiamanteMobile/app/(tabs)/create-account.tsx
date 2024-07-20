@@ -9,7 +9,7 @@ export default function CreateAccountScreen() {
   const generateKeypair = async () => {
     console.log('Generate Keypair button clicked');
     try {
-      const response = await fetch('http://localhost:3001/create-keypair', {
+      const response = await fetch('https://diamantemobile.onrender.com/create-keypair', {
         method: 'POST',
       });
       const data = await response.json();
@@ -27,7 +27,7 @@ export default function CreateAccountScreen() {
   const fundAccount = async () => {
     console.log('Fund Account button clicked');
     try {
-      const response = await fetch('http://localhost:3001/fund-account', {
+      const response = await fetch('https://diamantemobile.onrender.com/fund-account', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ publicKey: publicKeyToFund }),

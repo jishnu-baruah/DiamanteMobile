@@ -10,7 +10,7 @@ export default function ManageDataScreen() {
   const manageData = async () => {
     console.log('Manage Data button clicked');
     try {
-      const response = await fetch('http://localhost:3001/manage-data', {
+      const response = await fetch('https://diamantemobile.onrender.com/manage-data', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ senderSecret, key, value }),

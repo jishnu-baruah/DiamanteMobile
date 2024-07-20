@@ -10,7 +10,7 @@ export default function PaymentsScreen() {
   const makePayment = async () => {
     console.log('Make Payment button clicked');
     try {
-      const response = await fetch('http://localhost:3001/make-payment', {
+      const response = await fetch('https://diamantemobile.onrender.com/make-payment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ senderSecret, receiverPublicKey, amount }),

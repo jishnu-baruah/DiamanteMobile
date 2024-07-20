@@ -10,7 +10,7 @@ export default function SetOptionsScreen() {
   const setOptions = async () => {
     console.log('Set Options button clicked');
     try {
-      const response = await fetch('http://localhost:3001/set-options', {
+      const response = await fetch('https://diamantemobile.onrender.com/set-options', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ senderSecret, inflationDest, weight }),
